@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/assets/banner.png" alt="Business Growth Forecasting Banner" width="100%" />
+  <img src="banner/banner4.png" alt="Business Growth Forecasting Banner" width="100%" />
 </p>
 
 <h1 align="center">📈 Business Growth Forecasting — ML-Driven Time Series Demand Prediction</h1>
@@ -87,7 +87,7 @@ Built for **business teams, data scientists, and ML practitioners** who need rel
 
 ```mermaid
 flowchart LR
-    U[Raw Business Data (train.csv, test.csv)] --> A[Data Cleaning and Aggregation]
+    U[Raw Business Data] --> A[Data Cleaning and Aggregation]
     A --> B[Daily Time Series - Units per Day]
     B --> C[Feature Engineering - Lags, Rolling Stats, Calendar]
     C --> D[Train / Validation Split - Time Based]
@@ -109,38 +109,26 @@ python -m venv .venv
 .venv\Scripts\activate
 
 # macOS / Linux
-# source .venv/bin/activate
-Install Requirements
-bash
-Copy code
+source .venv/bin/activate
+
+## Install Requirements
 pip install -r requirements.txt
-🚀 Usage
 Run Jupyter Notebook
-bash
-Copy code
 jupyter notebook
 Open the notebook:
-
-text
-Copy code
 notebooks/forecasting_model.ipynb
 Inside the notebook you’ll find:
 
-Data loading & cleaning
+# Data loading & cleaning
+# Exploratory Data Analysis (EDA)
+# Feature engineering (lags, rolling stats, calendar)
+# CatBoost model training & tuning
+# Validation metrics & plots
+# Future forecast visualization
 
-Exploratory Data Analysis (EDA)
-
-Feature engineering (lags, rolling stats, calendar)
-
-CatBoost model training & tuning
-
-Validation metrics & plots
-
-Future forecast visualization
-
-🔑 Environment Variables
+### 🔑 Environment Variables
 No mandatory environment variables are required for basic usage.
 
-Optionally, you can configure environment variables if you later integrate experiment tracking or logging.
+Optionally, you can configure environment variables if you want to integrate tracking or logging.
 
 <p align="center"><b>Built by Anshul Tiwari</b></p> 

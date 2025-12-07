@@ -35,14 +35,6 @@ Built for **business teams, data scientists, and ML practitioners** who need rel
 
 ---
 
-## 🎨 UI Preview
-
-<p align="center">
-  <img src="src/assets/preview.png" alt="Business Growth Forecasting Notebook Preview" width="100%" />
-</p>
-
----
-
 ## 🧩 Key Features
 
 ### 🔹 Feature-Rich Time Series Modeling  
@@ -95,15 +87,15 @@ Built for **business teams, data scientists, and ML practitioners** who need rel
 
 ```mermaid
 flowchart LR
-    U[Raw Business Data<br/>(train.csv, test.csv)] --> A[Data Cleaning<br/>& Aggregation]
-    A --> B[Daily Time Series<br/>Units per Day]
-    B --> C[Feature Engineering<br/>Lags • Rolling Stats • Calendar]
-    C --> D[Train / Validation Split<br/>(Time-Based)]
-    D --> E[CatBoost Models<br/>with Different Hyperparams]
-    E --> F[Best Model Selection<br/>via SMAPE / RMSE]
-    F --> G[Final Model Training<br/>on Full History]
-    G --> H[Future Forecast Generator<br/>Iterative Predictions]
-    H --> I[Visualization & Insights<br/>Growth Curves & Metrics]
+    U[Raw Business Data (train.csv, test.csv)] --> A[Data Cleaning and Aggregation]
+    A --> B[Daily Time Series - Units per Day]
+    B --> C[Feature Engineering - Lags, Rolling Stats, Calendar]
+    C --> D[Train / Validation Split - Time Based]
+    D --> E[CatBoost Models - Different Hyperparameters]
+    E --> F[Best Model Selection - SMAPE and RMSE]
+    F --> G[Final Model Training - Full History]
+    G --> H[Future Forecast Generator - Iterative Predictions]
+    H --> I[Visualization and Insights - Growth Curves and Metrics]
 ```
 
 ## ⚙️ Installation
@@ -112,42 +104,43 @@ git clone https://github.com/Anshultiwari07/Business-Growth-Forecasting.git
 cd Business-Growth-Forecasting
 Create & Activate Virtual Environment (Recommended)
 python -m venv .venv
+
 # Windows
 .venv\Scripts\activate
+
 # macOS / Linux
-source .venv/bin/activate
-## Install Requirements
-
+# source .venv/bin/activate
+Install Requirements
+bash
+Copy code
 pip install -r requirements.txt
-
+🚀 Usage
 Run Jupyter Notebook
-Open:
-notebooks/forecasting_model.ipynb
+bash
+Copy code
+jupyter notebook
+Open the notebook:
 
+text
+Copy code
+notebooks/forecasting_model.ipynb
 Inside the notebook you’ll find:
 
-## Data loading & cleaning
-## Exploratory Data Analysis (EDA)
+Data loading & cleaning
 
-## Feature engineering (lags, rolling stats, calendar)
+Exploratory Data Analysis (EDA)
 
-## CatBoost model training & tuning
+Feature engineering (lags, rolling stats, calendar)
 
-## Validation metrics & plots
+CatBoost model training & tuning
 
-## Future forecast visualization
+Validation metrics & plots
 
-### 🔑 Environment Variables
+Future forecast visualization
+
+🔑 Environment Variables
 No mandatory environment variables are required for basic usage.
 
-
-
+Optionally, you can configure environment variables if you later integrate experiment tracking or logging.
 
 <p align="center"><b>Built by Anshul Tiwari</b></p> 
-
-
-
-
-
-
-
